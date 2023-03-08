@@ -1,0 +1,39 @@
+.content{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.heading{
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #5B8FB9;
+    text-align: center;
+}
+.text{
+    font-weight: 400;
+    font-size: 1.625rem;
+    padding: 2rem;
+    border: 1px solid #D9D9D9;
+}
+.social{
+    font-weight: 400;
+    font-size: 1.875rem;
+    color: #5B8FB9;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.images{
+    margin: 1rem;
+    text-align: center;
+}
+
+@media(max-width: 62rem) {
+    .content{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .text{
+        padding: 1rem;
+    }
+}

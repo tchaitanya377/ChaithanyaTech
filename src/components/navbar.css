@@ -1,0 +1,127 @@
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-heading{
+    display: flex;
+}
+.nav-title{
+    font-weight: 400;
+    font-size: 1.875rem;
+    color: #5B8FB9;
+    /* position: relative; */
+}
+
+.tech{
+    font-weight: 400;
+    font-size: 1.875rem;
+    color: #B6EADA;
+}
+nav{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+ul{
+    display: flex;
+    gap: 3rem;
+}
+li{
+    list-style: none;
+    font-weight: 400;
+    font-size: 1.625rem;
+  
+}
+li,a{
+    color: #B6EADA;
+    text-decoration: none;
+    
+}
+a:hover{
+    color: #5B8FB9;
+}
+
+.icons{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+    /* font-size: 2rem; */
+    color: #5B8FB9;
+    margin: 0%;
+    padding: 0%;
+}
+ion-icon[name="close-outline"]{
+    display: none;
+}
+ion-icon{
+    width: 2rem;
+  height: 2rem;
+}
+
+
+
+/* Responsive */
+@media(max-width: 62rem) {
+    
+    .header {
+        padding: 0 2.4rem;
+    }
+    .icons{
+        display: block;
+        z-index: 999;
+        border: 1px solid #D9D9D9;
+    }
+
+    .nav-heading{
+        width: 40%;
+    }
+
+    .navbar{
+        position: relative;
+        margin: 0%;
+    }
+    
+    .nav-items{
+        width: 100%;
+        height: 45rem;
+        background-color: #5B8FB9;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+      }
+
+    ion-icon[name="close-outline"]{
+        color: #03001C;
+      }
+      a:hover{
+        color: #03001C;
+      }
+    .active .nav-items{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    .active .icons ion-icon[name="close-outline"]{
+        display: block;
+    }
+
+    .active .icons ion-icon[name="menu-outline"]{
+        display: none;
+    }
+
+
+}

@@ -1,0 +1,31 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* .image{
+    height: 700rem;
+} */
+.heading{
+    font-weight: 400;
+    font-size: 40px;
+    margin: 2rem;
+    /* width: 45rem; */
+}
+
+@media(max-width: 62rem) {
+
+    .main{
+        margin-left: 1.875rem;
+        margin-bottom: 1.875;
+        display: block;
+    }
+
+    .image{
+        width: 2rem;
+    }
+}
